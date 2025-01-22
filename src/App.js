@@ -8,7 +8,7 @@ function App() {
         <h1>Галерея супергероев</h1>
       </header>
       <HeroList />
-    </div>ddd
+    </div>
   );
 }
 
