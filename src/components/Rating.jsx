@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 
-// Компонент для рейтинга
-function Rating({ heroName }) {
-  const [rating, setRating] = useState(localStorage.getItem(heroName) || 3); // Загрузка рейтинга из localStorage
 
-  // Сохранение нового рейтинга в localStorage
+function Rating({ heroName }) {
+  const [rating, setRating] = useState(localStorage.getItem(heroName) || 3); 
+
+  
   const handleRatingChange = (event) => {
     const newRating = event.target.value;
     setRating(newRating);
-    localStorage.setItem(heroName, newRating); // Сохранение рейтинга в localStorage
+    localStorage.setItem(heroName, newRating);
   };
 
   return (
